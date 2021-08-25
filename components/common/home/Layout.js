@@ -54,17 +54,17 @@ class Layout extends Component {
 		return (
 			<>
 				<Head>
-					<title>FOTA Marketplace</title>
+					<title>Nextjs-i10n</title>
 					<meta name="description" content="Farm" />
 					<meta name="author" content="Spa" />
 					<meta name="keywords" content="blockchain consultant, startup, ethereum, Farmer" />
-					<meta property="og:title" content="FOTA" />
+					<meta property="og:title" content="Nextjs-i10n" />
 					<meta property="og:url" content="" />
 					<meta property="og:type" content="website" />
 					<meta property="og:image" content="" />
-					<meta property="og:site-name" content="FOTA" />
-					<meta property="og:description" content="FOTA" />
-					<meta property="og:image:alt" content="FOTA" />
+					<meta property="og:site-name" content="Nextjs-i10n" />
+					<meta property="og:description" content="Nextjs-i10n" />
+					<meta property="og:image:alt" content="Nextjs-i10n" />
 					<meta charSet="utf-8" />
 					<meta name="viewport" content="initial-scale=1.0, width=device-width" />
 					<link rel="icon" href="../../../static/images/favicon.ico" />

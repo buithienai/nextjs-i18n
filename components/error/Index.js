@@ -5,7 +5,7 @@ const Index = () => {
     return (
         <>
             <Head>
-                <title>FOTA Marketplace</title>
+                <title>Nextjs-i10n</title>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 <link rel="icon" href="..../../static/images/favicon.ico" />
