@@ -1,0 +1,128 @@
+body {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+    margin: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    list-style: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.overflow-none {
+    overflow: initial !important;
+}
+
+.pt-40 {
+    padding-top: 40px;
+}
+
+.text-yellow {
+    color: #ffe552;
+}
+
+.btn {
+    color: #000;
+    border-radius: 0;
+}
+
+.btn.yellow {
+    background-color: #ffe552;
+}
+
+.small-btn {
+    padding: 2px 20px;
+    background: #00f0ff;
+    font-size: 16px;
+}
+
+.large-btn {
+    padding: 8px 20px;
+    background: #00f0ff;
+    font-size: 22px;
+}
+
+@media screen and (max-width:767px) {
+    .large-btn {
+        font-size: 12px;
+        padding: 4px 5px;
+    }
+}
+
+.content-inner {
+    overflow: hidden;
+}
+
+@media screen and (max-width:768px) {
+    .content-inner {
+        overflow-x: auto;
+        padding: 0 10px;
+    }
+}
+
+.g-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: auto;
+}
+
+@media screen and (min-width:1200px) {
+    .g-container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1439px) {
+    .g-container {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+}
+
+
+button,
+.btn {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+div[class^='col-'] {
+    z-index: 2;
+}
+
+.content-page {
+    margin-top: 50px;
+    padding-top: 160px;
+    z-index: 1;
+}
+
+@media screen and (max-width:768px) {
+    .content-page {
+        padding-top: 70px;
+    }
+}
+
+input:hover,
+input:focus,
+.form-control:hover,
+.form-control:focus {
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
