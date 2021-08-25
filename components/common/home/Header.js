@@ -14,6 +14,7 @@ class Header extends Component {
             isModalDetect: false,
             en: i18n.language === 'en',
             vi: i18n.language === 'vi',
+            check: false
         }
     }
 
@@ -27,6 +28,10 @@ class Header extends Component {
         this.setState({
             en: item.lang === 'en',
             vi: item.lang === 'vi',
+            check: item.lang === 'en' ? true : false
+        })
+        this.setState({
+
         })
         i18n.changeLanguage(item.lang);
     }
@@ -34,10 +39,11 @@ class Header extends Component {
     render() {
         const { activeMenu } = this.props;
         const { t } = this.props;
-        const { en, vi } = this.state;
+        const { en, vi, check } = this.state;
 
         console.log({ en });
         console.log({ vi });
+        console.log({ check });
 
         return (
             <header>
@@ -60,11 +66,11 @@ class Header extends Component {
                                 </a>
                                 <div className="dropdown-menu" aria-labelledby="dropdown09">
                                     <a
-                                        className={`dropdown-item ` + (vi ? 'active' : '')}
+                                        className={`dropdown-item ` + (!check ? 'active' : '')}
                                         onClick={() => this.handleChangeLanguage(LANGUAGE.vi)}
                                     >VI</a>
                                     <a
-                                        className={`dropdown-item ` + (en ? 'active' : '')}
+                                        className={`dropdown-item ` + (check ? 'active' : '')}
                                         onClick={() => this.handleChangeLanguage(LANGUAGE.en)}
                                     >EN</a>
                                 </div>
